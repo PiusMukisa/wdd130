@@ -52,22 +52,23 @@ p {
   /* Hero Container */
 .hero {
     position: relative;
-    background-image: url(/wdd130/wwr/image/riverflow.jpg);
+    background-image: url(/wdd130/wwr/images/underrafting.jpg);
     background-size: cover;
     height: 500px;
     background-position: center;
     background-size: cover;
+    display: block;
   }
   
   .hero h1 {
     position: absolute;
-    top: 15%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 48px;
     color: white;
     margin: 20px;
-    border-radius: 1px;
+    border-radius: 5px;
     background-color: black;
     
   }
@@ -75,11 +76,11 @@ p {
   
 .hero article {
     position: absolute;
-    bottom: 25px;
+    bottom: 80px;
     left: 1px;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 0px;
-    border-radius: 1px;
+    border-radius: 16px;
   }
   
   .hero article img {
@@ -117,9 +118,5 @@ p {
   
   
 }
-.logo {
-  height: 100%;
-  width: 200;
 
-}
 
