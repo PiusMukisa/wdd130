@@ -62,7 +62,7 @@ p {
   
   .hero h1 {
     position: absolute;
-    top: 0%;
+    top: -0%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 48px;
@@ -76,7 +76,7 @@ p {
   
 .hero article {
     position: absolute;
-    bottom: 80px;
+    bottom: 100px;
     left: 1px;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 0px;
