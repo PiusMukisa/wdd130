@@ -9,6 +9,8 @@ section h2{
 
 nav ul li a{
     text-decoration: none;
+    color: blue;
+    right: 47%;
 }
 
 body {
@@ -73,24 +75,26 @@ p {
   
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 25px;
+    left: 15px;
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 0px;
+    border-radius: 26px;
   }
   
   .hero article img {
     float: right;
     margin: 10px;
-    width: 100px;
+    width: 200px;
   }
   
   
 .hero article img {
     float: right;
     margin: 10px;
-    width: 100px;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
   }
   
   .hero article p {
@@ -104,5 +108,16 @@ p {
 }
 .sociallinks {
     size: 50px;
+}
+.nav class{
+  height: auto;
+  width: auto;
+  font-size: 48px;
+  
+}
+.logo {
+  height: 100%;
+  width: 200;
+
 }
 
