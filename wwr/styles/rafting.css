@@ -79,7 +79,7 @@ p {
     left: 15px;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 0px;
-    border-radius: 26px;
+    border-radius: 5px;
   }
   
   .hero article img {
@@ -94,7 +94,7 @@ p {
     margin: 10px;
     width: 300px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 10px;
   }
   
   .hero article p {
