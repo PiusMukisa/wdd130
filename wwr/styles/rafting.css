@@ -56,7 +56,7 @@ footer {
     display: flex; /* Makes the footer's contents flex items */
     justify-content: space-between; /* Aligns text on left and icons on the right */
     align-items: center; /* Vertically aligns items */
-    height: 80px; /
+    height: 80px; 
   }
 
   .sociallinks {
@@ -197,7 +197,7 @@ footer {
   display: flex;
   flex-direction: column; /* Places image and caption vertically */
   align-items: center;
-  padding: 3opx;
+  padding: 30px;
 }
 .jireh {
   display: grid;
