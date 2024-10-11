@@ -100,7 +100,7 @@ footer {
     justify-content: flex-end; /* Align the items to the right */
     gap: 20px; /* Space between the boxes */
     position: absolute; /* Ensures the container stays fixed at the top */
-    right: 20px; /* Moves the container to the right */
+    right: 0px; /* Moves the container to the right */
     top: 9px; /* Aligns the container to the top of the page */
     margin-top: 20px; /* Add some spacing from the top */
 }
