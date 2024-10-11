@@ -22,13 +22,12 @@ nav ul li a{
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background-color: #f0f0f0;
     position: relative;
-    
-  }
+}
 
   /* Headings */
 h1, h2, h3{
@@ -184,7 +183,8 @@ footer {
   
 }
 .ga figcaption{
-  margin-top: 5px;
+  margin-top: 2px;
+  align-content: normal;
   
 }
 .ga {
