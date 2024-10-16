@@ -2,9 +2,16 @@ section h2{
     color: coral;
 }
 header {
-  background-color: rgb(37, 33, 26);
-  border-radius: 5px;
-  
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Adjust these fractions to control how space is divided between logo and nav */
+  align-items: center; /* Align items vertically */
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #000; /* Ensure text in the header is clearly visible */
+  background-color: #f0f0f0; /* Light gray for sufficient contrast */
+}
+.logo {
+  grid-column: 1; /* Place logo in the first column */
 }
  nav ul{
     list-style: none;
@@ -25,7 +32,8 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: #f0f0f0;
+    color: #333; /* Dark gray for better contrast */
+    background-color: #fff; /* White background */
     position: relative;
 }
 
@@ -93,28 +101,27 @@ footer {
 }
   /* Page Width */
   .container {
-    color: blue;
+    color: #333; /* Darken text for better readability */
     font-size: medium;
     font-weight: bold;
     display: flex;
     justify-content: flex-end; /* Align the items to the right */
     gap: 20px; /* Space between the boxes */
     position: absolute; /* Ensures the container stays fixed at the top */
-    right: 0px; /* Moves the container to the right */
-    top: 9px; /* Aligns the container to the top of the page */
+    right: 0%; /* Moves the container to the right */
+    top: 30px; /* Aligns the container to the top of the page */
     margin-top: 20px; /* Add some spacing from the top */
+    margin-right: auto;
 }
 .container a {
   text-decoration: none;
   padding: 10px 20px;
-  background-color: lightblue; /* Background color of the boxes */
+  background-color: #fff; /* Ensure background is light enough */
   border: 2px solid cornsilk; /* Box border */
   border-radius: 5px; /* Rounded corners for boxes */
 }
 .container a:hover {
-  background-image: url(/wdd130/wwr/images/massrafting.jpg);
   color: white;
-  transition: background-color 0.3s ease;
 }
 
   /* Hero Container */
@@ -125,7 +132,8 @@ footer {
     height: 500px;
     background-position: center;
     background-size: cover;
-    display: block;
+    display: grid;
+    
   }
   
   .hero h1 {
