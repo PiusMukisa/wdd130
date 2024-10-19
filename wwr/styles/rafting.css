@@ -1,4 +1,4 @@
-section h2{
+.section h2 {
     color: coral;
 }
 header {
@@ -13,7 +13,7 @@ header {
 .logo {
   grid-column: 1; /* Place logo in the first column */
 }
- nav ul{
+ nav ul {
     list-style: none;
     display: flex;
     margin-right: 400px;
@@ -21,7 +21,7 @@ header {
     top: auto;
 } 
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: blue;
     right: 200%;
@@ -38,7 +38,7 @@ body {
 }
 
   /* Headings */
-h1, h2, h3{
+h1, h2, h3 {
     color: var(--primary-color);
     
   }
