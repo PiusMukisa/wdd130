@@ -368,3 +368,230 @@ border: none;
 border-radius: 8px;
 cursor: pointer;
 }
+/* Professional Homepage Styles
+   Using a systematic approach with CSS custom properties for consistency */
+
+   :root {
+    /* Professional color palette */
+    --primary-color: #2c5282;
+    --secondary-color: #2d3748;
+    --accent-color: #4299e1;
+    --text-primary: #1a202c;
+    --text-secondary: #4a5568;
+    --background-light: #f7fafc;
+    --background-white: #ffffff;
+    
+    /* Typography */
+    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-secondary: 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    
+    /* Spacing */
+    --spacing-unit: 0.25rem;
+    --container-width: 1200px;
+    
+    /* Transitions */
+    --transition-fast: 200ms ease;
+    --transition-standard: 300ms ease;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background-light);
+}
+
+/* Enhanced Hero Section */
+.hero {
+    background: url(/wdd130/wwr/images/underrafting.jpg);
+    padding: calc(var(--spacing-unit) * 24) calc(var(--spacing-unit) * 8);
+    margin: calc(var(--spacing-unit) * 8) auto;
+    border-radius: 8px;
+    max-width: var(--container-width);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+    font-family: var(--font-secondary);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: white;
+    font-weight: 800;
+    
+    margin-bottom: calc(var(--spacing-unit) * 6);
+    
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: calc(var(--spacing-unit) * 12);
+    align-items: center;
+    
+}
+
+.hero-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-standard);
+    filter: brightness(1.02);
+}
+
+.hero-content img:hover {
+    transform: translateY(-4px);
+}
+
+.hero-content p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    background: var(--background-white);
+    padding: calc(var(--spacing-unit) * 8);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-left: auto;
+}
+
+/* Professional Newsletter Section */
+.home-newsletter {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    padding: calc(var(--spacing-unit) * 16);
+    margin: calc(var(--spacing-unit) * 16) auto;
+    border-radius: 8px;
+    max-width: var(--container-width);
+    color: var(--background-white);
+}
+
+.newsletter-form {
+    display: grid;
+    gap: calc(var(--spacing-unit) * 6);
+    max-width: 600px;
+    margin: 0 auto;
+    background: url('.../wdd130/wwr/images/underrafting.jpg');
+    padding: calc(var(--spacing-unit) * 8);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.newsletter-form input {
+    padding: calc(var(--spacing-unit) * 4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+    transition: all var(--transition-standard);
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+.newsletter-form button {
+    padding: calc(var(--spacing-unit) * 4) calc(var(--spacing-unit) * 8);
+    background: var(--secondary-color);
+    color: var(--background-white);
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-standard);
+}
+
+.newsletter-form button:hover {
+    background: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+/* Enhanced Grid Section */
+.home-grid {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: calc(var(--spacing-unit) * 16) calc(var(--spacing-unit) * 4);
+}
+
+.home-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: calc(var(--spacing-unit) * 8);
+}
+
+.home-grid-layout figure {
+    background: var(--background-white);
+    padding: calc(var(--spacing-unit) * 6);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-standard);
+}
+
+.home-grid-layout figure:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Professional Call to Action */
+.call-to-action {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: calc(var(--spacing-unit) * 16);
+    margin: calc(var(--spacing-unit) * 16) auto;
+    border-radius: 8px;
+    max-width: var(--container-width);
+    color: var(--background-white);
+}
+
+.action-button {
+    display: inline-block;
+    padding: calc(var(--spacing-unit) * 4) calc(var(--spacing-unit) * 10);
+    background: var(--background-white);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all var(--transition-standard);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.action-button:hover {
+    background: var(--background-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Professional Responsive Design */
+@media (max-width: 1024px) {
+    :root {
+        --container-width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: calc(var(--spacing-unit) * 8);
+    }
+    
+    .hero {
+        padding: calc(var(--spacing-unit) * 12) calc(var(--spacing-unit) * 4);
+    }
+    
+    .newsletter-form,
+    .call-to-action {
+        padding: calc(var(--spacing-unit) * 6);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
