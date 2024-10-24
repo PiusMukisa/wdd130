@@ -71,6 +71,7 @@ footer {
   padding: 10px;
   box-sizing: border-box;
   border-radius: 10px;
+  color: #e0e0e0;
 }
 
 .sociallinks p {
@@ -82,6 +83,7 @@ footer {
 
 .sociallinks a {
   margin-left: 10px;
+  
 }
 
 .sociallinks a img {
@@ -92,8 +94,12 @@ footer {
 .sociallinks div {
   display: flex;
   justify-content: flex-end; /* Aligns icons to the right */
+  color: #e0e0e0;
 }
+.piusmukisa a {
+  color: #e0e0e0;
 
+}
 .container {
   color: #333;
   font-size: medium;
@@ -362,12 +368,13 @@ resize: vertical;
 }
 
 .contact-form button {
-background-color: #D84315;
-color: #ffffff;
-padding: 12px 25px;
-border: none;
-border-radius: 8px;
-cursor: pointer;
+  background-color: #8a3c00; /* Much darker orange */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 /* Professional Homepage Styles
    Using a systematic approach with CSS custom properties for consistency */
@@ -596,3 +603,4 @@ body {
         animation: none !important;
     }
 }
+
