@@ -418,7 +418,7 @@ body {
 
 /* Enhanced Hero Section */
 .hero {
-    background: url(/wwr/images/underrafting.jpg);
+    background: url('/...wwr/images/underrafting.jpg');
     padding: calc(var(--spacing-unit) * 24) calc(var(--spacing-unit) * 8);
     margin: calc(var(--spacing-unit) * 8) auto;
     border-radius: 8px;
